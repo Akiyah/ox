@@ -9,7 +9,6 @@ function urlParams() {
 }
 
 var DEFAULT_TEXTS = ['○', '×'];
-//var DEFAULT_TEXTS = ['○', '×', '✓', '!', '?'];
 var DEFAULT_COLORS = ['white', 'white', 'green', 'black', 'red'];
 var DEFAULT_BACKGROUND_COLORS = ['red', 'blue', 'white', 'yellow', 'white'];
 
