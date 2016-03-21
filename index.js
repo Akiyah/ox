@@ -3,7 +3,7 @@ function urlParams() {
   var pairs = location.search.substring(1).split('&');
   for(var i = 0; pairs[i]; i++) {
     var kv = pairs[i].split('=');
-    params[kv[0]] = kv[1];
+    params[kv[0]] = decodeURIComponent(kv[1]);
   }
   return params;
 }
