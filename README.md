@@ -3,6 +3,8 @@ ox
 
 ox is a tool to display an opinion.
 
+![ox](ox.png)
+
 ## Examples
 
 - Japanese style (default)
