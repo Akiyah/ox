@@ -1,59 +1,15 @@
 <html>
-<meta http-equiv="Cache-Control" content="no-store" />
+<meta charset='utf-8'>
 <head>
-<title>vx</title>
+<title>ox</title>
 <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-<script src="jquery.pagepiling.min.js" type="text/javascript"></script>
-<style type="text/css">
-  div.mark {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-  }
-  div.mark_v {
-    color: #008000;
-    background: white;
-  }
-  div.mark_x {
-    color: white;
-    background: blue;
-  }
-  div.mark_o {
-    color: white;
-    background: red;
-  }
-  div.mark_i {
-    color: black;
-    background: yellow;
-  }
-  div.mark_q {
-    color: red;
-    background: white;
-  }
-</style>
-<script type="text/javascript">
-function init() {
-  var size = Math.min($('body').width(), $('body').height());
-  $('div.mark').css('font-size', size + 'px');
-}
-
-$(function() {
-  init();
-  $('#pagepiling').pagepiling({});
-});
-
-$(window).on("orientationchange resize", init);
-</script>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-  <div id="pagepiling">
-    <div class="section mark_v"><div class="mark">&#x2713;</div></div>
-    <div class="section mark_x"><div class="mark">&times;</div></div>
-    <div class="section mark_o"><div class="mark">&#x25CB;</div></div>
-    <div class="section mark_i"><div class="mark">!</div></div>
-    <div class="section mark_q"><div class="mark">?</div></div>
-  </div>
+<div id="pagepiling"></div>
 </body>
 </html>
 
