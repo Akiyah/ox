@@ -1,3 +1,3 @@
-# vx
+# ox
 
-http://akiyah.github.io/vx/
+http://akiyah.github.io/ox/
