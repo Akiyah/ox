@@ -57,6 +57,7 @@ function resize() {
     var fontSize = $(this).data('fontSize');
     fontSize *= Math.min(bodyWidth / width, bodyHeight / height);
     $(this).css('fontSize', fontSize + 'px');
+    $(this).css('lineHeight', fontSize + 'px');
     $(this).data('fontSize', fontSize);
   });
 }
@@ -67,9 +68,10 @@ function init() {
   for (var i = 0; i < pages.length; i++) {
     var text = $('<span>' + pages[i].text + '</span>');
     text.css('fontSize', '10px');
+    text.css('lineHeight', '10px');
     text.data('fontSize', 10)
     var text_wrapper = $('<div class="text_wrapper"></div>');
-    var section = $('<div class="section"><div class="text_wrapper"></div></div>');
+    var section = $('<div class="section"></div>');
     section.css('color', pages[i].color);
     section.css('backgroundColor', pages[i].backgroundColor);
 
